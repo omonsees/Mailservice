@@ -23,7 +23,7 @@ public class MailController {
     }
 
     @PostMapping("/send")
-    @CrossOrigin(origins = {"http://www.omonsees.de", "http://omonsees.de"})
+    @CrossOrigin(origins = {"https://www.omonsees.de", "https://omonsees.de"})
     public void sendMail(@RequestBody Message message) {
         logger.info("JSON message: "+message.toString());
         try {
